@@ -2,9 +2,18 @@
 
 Welcome to my portfolio repository! This project showcases my skills and projects. You can view the live version [here](https://riddhi-1510.github.io/TechShow/).
 
-![Portfolio Preview](C:\Users\riddh\OneDrive\Pictures\Screenshots\Screenshot 2024-05-19 215902.png)
+## Technologies Used
+
+- ReactJs
+- JS
+- Tailwind CSS
+- CSS
+
+## Dependency and Animation
+- Michalsnik use for Animation
+- npm Dependency for logos, icons, routers...
+
+<img src="https://github.com/Riddhi-1510/TechShow/assets/122283883/002eb66d-8ce8-4939-8602-791de52ccb09" width="800px" height="500px">
 
 
 
-## Introduction
-This is my portfolio website where I display my projects and skills. It is built using React and Tailwind CSS.
