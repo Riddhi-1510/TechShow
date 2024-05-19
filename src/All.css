@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+/* --------------------------------Body-------------------------------------- */
+
+body {
+	height: 100vh;
+    /* background-color: #E6F4FF; */
+}
+
+/* --------------------------------My Name-------------------------------------- */
+
+
+.name{
+    background: #020108;
+    background: linear-gradient(to right, #020108 0%, #053264 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+
+
+/* -------------------------------------------NAV-BAR------------------------------------------------ */
+/* nav {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color:white;
+    z-index: 1000;
+  }
+nav div.logo{
+    width:40%;
+    background-image: url('/portfolio/src/l1.png');
+}
+nav div .bar{
+    font-size: 25px;
+    padding:13px;
+    margin:10px;
+}
+nav div .bar:hover{
+    background-color:rgba(255, 255, 255, 0.174);
+    border-radius: 10px;
+}
+
+nav div.content{
+    width:100%;
+}
+nav ul{
+    list-style: none;
+    width: 100%;
+} */
+
+/* nav ul li{
+    width: 100%;
+    border:1px solid;    
+    border-radius: 5px;
+    text-align: center;
+    padding: 5%; */
+    /* animation: fadeIn 1s ease-in-out; */
+    /* transition: 0.3s;
+}
+nav ul li:hover{
+    background-color: rgba(255, 255, 255, 0.123);
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+} */
+
+
+/* ---------------------------------- Done ---------------------------------------------*/
+.headingAll{
+    background: #020108;
+    background: linear-gradient(to right, #020108 0%, #90C4FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.headingh1{
+    background: #020108;
+    background: linear-gradient(to right, #020108 0%, #90C4FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.sd{
+    -webkit-box-shadow: 2px 6px 33px -9px rgba(144,196,255,1);
+-moz-box-shadow: 2px 6px 33px -9px rgba(144,196,255,1);
+box-shadow: 2px 6px 33px -9px rgba(144,196,255,1);
+}
