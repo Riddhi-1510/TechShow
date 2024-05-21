@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/TechShow/static/css/main.9ebf4103.css",
-    "main.js": "/TechShow/static/js/main.9286387d.js",
+    "main.js": "/TechShow/static/js/main.411ed64e.js",
     "static/js/453.1407b060.chunk.js": "/TechShow/static/js/453.1407b060.chunk.js",
     "static/media/p4.png": "/TechShow/static/media/p4.38ae025a794216ecd2d2.png",
     "static/media/p2.png": "/TechShow/static/media/p2.b532944f9d0623290308.png",
@@ -11,11 +11,11 @@
     "static/media/tailwind-css.svg": "/TechShow/static/media/tailwind-css.681db3393706b0b8d30fa63229e8ee85.svg",
     "index.html": "/TechShow/index.html",
     "main.9ebf4103.css.map": "/TechShow/static/css/main.9ebf4103.css.map",
-    "main.9286387d.js.map": "/TechShow/static/js/main.9286387d.js.map",
+    "main.411ed64e.js.map": "/TechShow/static/js/main.411ed64e.js.map",
     "453.1407b060.chunk.js.map": "/TechShow/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9ebf4103.css",
-    "static/js/main.9286387d.js"
+    "static/js/main.411ed64e.js"
   ]
 }
