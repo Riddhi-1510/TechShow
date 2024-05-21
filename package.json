@@ -1,5 +1,6 @@
 {
   "name": "portfolio",
+  "homepage": "https://Riddhi-1510.github.io/TechShow",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,6 +10,7 @@
     "@tsparticles/perlin-noise": "^3.4.0",
     "aos": "^3.0.0-beta.6",
     "bootstrap": "^5.3.3",
+    "gh-pages": "^6.1.1",
     "programming-languages-logos": "^0.0.3",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.2",
@@ -23,6 +25,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+   "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

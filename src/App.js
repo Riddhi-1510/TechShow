@@ -26,7 +26,6 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { FaSchool } from "react-icons/fa6";
 import { HashLink } from "react-router-hash-link";
-import CanvasAnimation from "./CanvasAnimation";
 
 function App() {
   const [isClicked, setIsClicked] = useState(false);
@@ -62,28 +61,29 @@ function App() {
   });
   return (
     <div className="border border-transperent">
-      <CanvasAnimation />
       <div className="baricon md:hidden border">
         {!isClicked && (
           <div className="barsShow fixed z-50 w-[100px] ">
             <i
-              className="w-[70px] mx-[30px] mt-[30px] border-black fa-solid backdrop-blur-md bg-transparent fa-bars bar text-4xl  my-2 border-2 p-4 rounded-lg font-bold text-center"
+              className="w-[50px] h-[50px] mx-[30px] mt-[30px] border-black fa-solid backdrop-blur-md bg-transparent fa-bars
+              bar text-4xl  border-2  rounded-lg font-bold text-center align-center p-1"
               onClick={() => handleClickOpen()}
             ></i>
           </div>
         )}
         {isClicked && (
-          <div className="w-[100px] barclose fixed z-50">
+          <div className="barclose fixed z-50">
             <i
-              className="w-[70px] mx-[30px] mt-[30px] border-black fa-solid backdrop-blur-md bg-transparent fa-xmark 
-               bar text-4xl  my-2 border-2 p-4 rounded-lg font-bold text-center"
+              className="w-[50px] h-[50px] mx-[30px] mt-[30px] border-black fa-solid backdrop-blur-md bg-transparent fa-xmark 
+               bar text-4xl  border-2  rounded-lg font-bold text-center align-center p-1"
               onClick={() => handleClickClose()}
             ></i>
+           
           </div>
         )}
       </div>
       {isClicked && (
-        <nav className="md:hidden mt-[120px] ml-[26px] fixed sm:bg-transparent  sm:border-0 md:border z-50 w-[50px] h-[54px] border rounded-lg mt-3 ml-3 md:bg-black  text-white px-2">
+        <nav className="mt-[120px]  fixed     md:border z-50 w-[50px] h-[54px]  rounded-lg   ml-[20px] md:bg-black  text-white px-2">
           <div className="w-full  grid lg:grid-cols-5  md:grid-cols-5 gap-0">
             <div className="w-[50px] rounded-full  p-[30px] bg-black items-center justify-center h-[50px] p-1">
               <HashLink
@@ -483,17 +483,20 @@ function App() {
         {/* className="mb-[60px] bg-slate-200 py-[50px] px-[20px] duration-1000 shadow-2xl font-bold w-fit border border-black mx-auto rounded text-center" */}
         <div
           data-aos="flip-up"
-          className="mb-[60px] border border-black mx-auto text-wrap  w-[60%] p-[30px] lg:p-[50px] bg-[#0D68AB] rounded-lg shadow-2xl text-center font-bold"
+          className="mb-[60px] border border-black mx-auto text-wrap  w-[70%] p-[30px] lg:p-[50px] bg-[#0D68AB] rounded-lg shadow-2xl text-center font-bold"
         >
-          <p className="text-[20px] sm:text-[20px] mx-auto text-wrap text-[#88c3ed] underline">
-            
-            mistryriddhi1510 @gmail.com 
-          </p> 
+          <button
+            data-aos="fade"
+            className="shadow-1xl md:text-[30px] sm:text-[20px] mx-auto  text-[#88c3ed] rounded py-[10px] bg-transparent underline"
+          >
+            <a href="https://mail.google.com">mistryriddhi1510 <br />@gmail.com </a>
+          </button>
+
           <br />
           <br />
           <button
             data-aos="fade"
-            className="shadow-1xl text-[16px] sm:text-[20px] mx-auto border rounded p-4 bg-[#90C4FF] text-black"
+            className="shadow-1xl text-[16px] sm:text-[20px] md:text-[30px] mx-auto border rounded p-4 bg-[#90C4FF] text-black"
           >
             <a href="https://mail.google.com">Send Me Connect Email</a>
           </button>
@@ -502,17 +505,17 @@ function App() {
 
       <div className="mx-auto  mb-[0px] ">
         <div className="flex items-center  place-content-around ">
-          <div className="text-[20px] mb-[20px] ">
+          <div className="text-[15px] mb-[20px] ">
             <p className="text-blue-500 m-[10px] ">
               @2024 Riddhi Mistry&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
             </p>
           </div>
           <div className=" flex space-x-10">
             <div className="text-right ">
-              <FaLinkedin className="text-blue-600 text-2xl mb-[20px]" />
+              <a href="https://www.linkedin.com/in/riddhi-mistry-1bba63251/"><FaLinkedin className="text-blue-600 text-2xl mb-[20px]" /></a>
             </div>
             <div className="text-right  ">
-              <FaGithub className="text-2xl mb-[20px]" />
+             <a href="https://github.com/Riddhi-1510"> <FaGithub className="text-2xl mb-[20px]" /></a>
             </div>
           </div>
         </div>
