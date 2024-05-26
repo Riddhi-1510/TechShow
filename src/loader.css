@@ -1,0 +1,11 @@
+.loaderC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+.hops{
+    margin:0;
+    padding:0;
+}
