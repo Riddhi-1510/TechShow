@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/TechShow/static/css/main.2774dc97.css",
-    "main.js": "/TechShow/static/js/main.50c37c81.js",
+    "main.css": "/TechShow/static/css/main.5f917dee.css",
+    "main.js": "/TechShow/static/js/main.e8306871.js",
     "static/js/453.1407b060.chunk.js": "/TechShow/static/js/453.1407b060.chunk.js",
     "static/media/loading.gif": "/TechShow/static/media/loading.fe206e9f872263b169ea.gif",
     "static/media/p1.png": "/TechShow/static/media/p1.c471d1473504c5132c24.png",
@@ -11,12 +11,12 @@
     "static/media/p3.png": "/TechShow/static/media/p3.6f0a81a6b61b2e48fe24.png",
     "static/media/tailwind-css.svg": "/TechShow/static/media/tailwind-css.681db3393706b0b8d30fa63229e8ee85.svg",
     "index.html": "/TechShow/index.html",
-    "main.2774dc97.css.map": "/TechShow/static/css/main.2774dc97.css.map",
-    "main.50c37c81.js.map": "/TechShow/static/js/main.50c37c81.js.map",
+    "main.5f917dee.css.map": "/TechShow/static/css/main.5f917dee.css.map",
+    "main.e8306871.js.map": "/TechShow/static/js/main.e8306871.js.map",
     "453.1407b060.chunk.js.map": "/TechShow/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2774dc97.css",
-    "static/js/main.50c37c81.js"
+    "static/css/main.5f917dee.css",
+    "static/js/main.e8306871.js"
   ]
 }
