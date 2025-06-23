@@ -130,14 +130,24 @@ function App() {
                     </HashLink>
                   </div>
                   
+                  <div className="w-[50px] rounded-full p-[30px] bg-black items-center justify-center h-[50px] p-1">
+  <HashLink
+    className="hover:bg-slate-300 duration-500 rounded-lg w-full h-full flex items-center justify-center text-[20px]"
+    smooth
+    to="#coding"
+  >
+    <i className="fa-solid fa-code"></i> 
+  </HashLink>
+</div>
+
                   <div className=" w-[50px] rounded-full   p-[30px] bg-black items-center justify-center h-[50px] p-1">
                     <HashLink
-  className="hover:bg-slate-300 duration-500 rounded-lg w-full h-full flex items-center justify-center text-[20px]"
-  smooth
-  to="#experience"
->
-  <i className="fa-solid fa-briefcase"></i>
-</HashLink>
+                        className="hover:bg-slate-300 duration-500 rounded-lg w-full h-full flex items-center justify-center text-[20px]"
+                        smooth
+                        to="#experience"
+                      >
+                        <i className="fa-solid fa-briefcase"></i>
+                      </HashLink>
 
                   </div>
 
@@ -163,8 +173,8 @@ function App() {
                 </div>
               </nav>
             )}
-            <nav className="  mt-[20px] fixed sm:hidden md:block sm:border-0 md:border z-50 w-[520px] h-[54px] border rounded-lg border ml-3 md:bg-black  text-white px-2">
-              <div className="w-full  grid lg:grid-cols-5  md:grid-cols-5 gap-0 sm:gap-0">
+            <nav className="  mt-[20px] fixed sm:hidden md:block sm:border-0 md:border z-50 w-[620px] h-[54px] border rounded-lg border ml-3 md:bg-black  text-white px-2">
+              <div className="w-full  grid lg:grid-cols-6  md:grid-cols-6 gap-0 sm:gap-0">
                 <div className="w-[100px]  bg-black items-center justify-center h-[50px] p-1">
                   <HashLink
                     className="hover:bg-slate-300 hover:text-black duration-500 rounded-lg w-full h-full flex items-center justify-center text-[17px]"
@@ -190,6 +200,15 @@ function App() {
                     to="#projects"
                   >
                     Projects
+                  </HashLink>
+                </div>
+                <div className="w-[100px]  bg-black items-center justify-center h-[50px] p-1">
+                  <HashLink
+                    className="hover:bg-slate-300 hover:text-black duration-500 rounded-lg  w-full h-full flex items-center justify-center text-[17px]"
+                    smooth
+                    to="#coding"
+                  >
+                    Profiles
                   </HashLink>
                 </div>
                 
@@ -239,7 +258,14 @@ function App() {
                           data-aos="fade-right"
                           className=" text-gray-700 text-2xl from-stone-600"
                         >
-                          Welcome to my portfolio! I’m passionate about learning and exploring automation in software testing. Along with that, I have a strong grasp of core subjects like Data Structures & Algorithms, Database Management Systems, and Object-Oriented Programming. I’m always ready to learn and explore new technologies to keep growing in the tech world.
+                          Welcome to my portfolio! I’m passionate about learning and exploring automation in software testing. Along with that, I have a strong grasp of core subjects like Data Structures & Algorithms, Database Management Systems, and Object-Oriented Programming. I’m always ready to learn and explore new technologies to keep growing in the tech world.<br/>
+                          <a
+  href="/Resume_Riddhi_Mistry.pdf"
+  download
+  className="inline-block mt-4 text-[16px] sm:text-[20px] md:text-[24px] font-semibold bg-white text-blue-800 px-6 py-3 rounded-lg shadow-lg hover:bg-blue-100 transition duration-300"
+>
+  📄 Download Resume
+</a>
                         </p>
                       </div>
                     </div>
@@ -656,6 +682,8 @@ function App() {
               id="connectme"
               className=" mt-[100px] mr-[0px] w-[100%] z-10 "
             >
+              
+
               <div
                 data-aos="fade-right"
                 className="  headingAll heading text-4xl w-fit m-auto p-4 font-bold mb-[60px] mt-[50px]"
