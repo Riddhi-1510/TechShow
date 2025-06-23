@@ -3,9 +3,9 @@ import "./index.css";
 import "./All.css"
 import Img1 from "./Img/own.png";
 import p1 from "./Img/p1.png";
-import p2 from "./Img/p2.png";
+import p2 from "./Img/p22.png";
 import p3 from "./Img/p3.png";
-import p4 from "./Img/p4.png";
+import p4 from "./Img/image.png";
 import { FaReact } from "react-icons/fa";
 import { SiMysql, SiPostgresql, SiMongodb } from "react-icons/si"; // Importing the required icons
 import { DiNodejs } from "react-icons/di"; // Importing DiNodejs icon for Node.js
@@ -27,6 +27,9 @@ import "react-vertical-timeline-component/style.min.css";
 import { FaSchool } from "react-icons/fa6";
 import { HashLink } from "react-router-hash-link";
 import Loader from "./Loader.jsx";
+import { MdWork } from "react-icons/md";
+import { FaUsers, FaUserEdit } from "react-icons/fa";
+
 
 function App() {
   const [isClicked, setIsClicked] = useState(false);
@@ -108,7 +111,7 @@ function App() {
                       <i class="fa-regular fa-face-smile"></i>
                     </HashLink>
                   </div>
-                  <div className="w-[50px] rounded-full   p-[30px]  bg-black items-center justify-center h-[50px] p-1">
+                  {/* <div className="w-[50px] rounded-full   p-[30px]  bg-black items-center justify-center h-[50px] p-1">
                     <HashLink
                       className="hover:bg-slate-300  duration-500 rounded-lg  w-full h-full flex items-center justify-center text-[20px]"
                       smooth
@@ -116,7 +119,7 @@ function App() {
                     >
                       <i class="fa-solid fa-list-check"></i>
                     </HashLink>
-                  </div>
+                  </div> */}
                   <div className=" w-[50px] rounded-full   p-[30px] bg-black items-center justify-center h-[50px] p-1">
                     <HashLink
                       className="hover:bg-slate-300  duration-500 rounded-lg  w-full h-full flex items-center justify-center text-[20px]"
@@ -126,6 +129,19 @@ function App() {
                       <i class="fa-solid fa-file"></i>
                     </HashLink>
                   </div>
+                  
+                  <div className=" w-[50px] rounded-full   p-[30px] bg-black items-center justify-center h-[50px] p-1">
+                    <HashLink
+  className="hover:bg-slate-300 duration-500 rounded-lg w-full h-full flex items-center justify-center text-[20px]"
+  smooth
+  to="#experience"
+>
+  <i className="fa-solid fa-briefcase"></i>
+</HashLink>
+
+                  </div>
+
+                  
                   <div className="w-[50px] rounded-full   p-[30px]  bg-black items-center justify-center h-[50px] p-1">
                     <HashLink
                       className="hover:bg-slate-300  duration-500 rounded-lg  w-full h-full flex items-center justify-center text-[20px]"
@@ -158,7 +174,7 @@ function App() {
                     AboutMe
                   </HashLink>
                 </div>
-                <div className="w-[100px]  bg-black items-center justify-center h-[50px] p-1">
+                {/* <div className="w-[100px]  bg-black items-center justify-center h-[50px] p-1">
                   <HashLink
                     className="hover:bg-slate-300 hover:text-black duration-500 rounded-lg  w-full h-full flex items-center justify-center text-[17px]"
                     smooth
@@ -166,7 +182,7 @@ function App() {
                   >
                     Skills
                   </HashLink>
-                </div>
+                </div> */}
                 <div className="w-[100px]  bg-black items-center justify-center h-[50px] p-1">
                   <HashLink
                     className="hover:bg-slate-300 hover:text-black duration-500 rounded-lg  w-full h-full flex items-center justify-center text-[17px]"
@@ -174,6 +190,17 @@ function App() {
                     to="#projects"
                   >
                     Projects
+                  </HashLink>
+                </div>
+                
+                
+                <div className="w-[100px]  bg-black items-center justify-center h-[50px] p-1">
+                  <HashLink
+                    className="hover:bg-slate-300 hover:text-black duration-500 rounded-lg  w-full h-full flex items-center justify-center text-[17px]"
+                    smooth
+                    to="#experience"
+                  >
+                    Experience
                   </HashLink>
                 </div>
                 <div className="w-[100px]  bg-black items-center justify-center h-[50px] p-1">
@@ -202,7 +229,7 @@ function App() {
                   <div className=" mx-auto p-4">
                     <div className="flex flex-col items-center justify-center">
                       <div>
-                        <img src={Img1} alt="Personal" className="mx-auto mb-2" />
+                        <img src={Img1} alt="Personal" className="mx-auto mb-2 " />
                       </div>
                       <div className="text-center">
                         <h1 className="text-4xl font-bold  name mb-[30px]">
@@ -212,8 +239,7 @@ function App() {
                           data-aos="fade-right"
                           className=" text-gray-700 text-2xl from-stone-600"
                         >
-                          Welcome to my portfolio! I am passionate about learning new
-                          things and collaborating with others on projects.
+                          Welcome to my portfolio! I’m passionate about learning and exploring automation in software testing. Along with that, I have a strong grasp of core subjects like Data Structures & Algorithms, Database Management Systems, and Object-Oriented Programming. I’m always ready to learn and explore new technologies to keep growing in the tech world.
                         </p>
                       </div>
                     </div>
@@ -222,7 +248,72 @@ function App() {
               </section>
             </div>
 
-            <section
+
+ <section
+              id="projects"
+              className="  mt-[100px] mr-[0px] w-[100%] z-10"
+            >
+              <div
+                data-aos="fade-right"
+                className="  headingAll heading text-4xl w-fit m-auto p-4 font-bold mb-[60px] mt-[50px]"
+              >
+                Projects
+              </div>
+              <div className="mx-auto grid lg:grid-cols-2 md:grid-cols-2 my-10 gap-9 ">
+                <div
+                  data-aos="flip-up"
+                  className="sd w-fit text-center  mx-auto mb-[50px] rounded-lg"
+                >
+                  <div className="w-fit overflow-hidden duration-1000 ">
+                    <img
+                      src={p4}
+                      className="w-[450px] h-[200px] hover:scale-125 duration-1000"
+                      alt=""
+                    />
+                  </div>
+                  <a href="https://github.com/Riddhi-1510/MuTAP_LLMs">
+                    <RiGithubFill color="#181717" className="inline-block text-2xl" />{" "}
+                    <h1 className="p-2 text-2xl underline ">MuTAP_LLMs</h1>
+                  </a>
+                </div>
+                <div
+                  data-aos="flip-up"
+                  className="sd w-fit text-center rounded-lg mx-auto mb-[50px]"
+                >
+                  <div className="w-fit overflow-hidden duration-1000 ">
+                    <img
+                      src={p2}
+                      className="w-[450px] h-[200px] hover:scale-125 duration-1000"
+                      alt=""
+                    />
+                  </div>
+                  <a href="https://github.com/Riddhi-1510/G17_StaffGrid">
+                    <RiGithubFill color="#181717" className="inline-block text-2xl" />
+                    <h1 className="p-2 text-2xl underline ">Staff Grid</h1>
+                  </a>
+                </div>
+                 
+                <div
+                  data-aos="flip-up"
+                  className="sd w-fit text-center rounded-lg mx-auto mb-[50px]"
+                >
+                  <div className="w-fit overflow-hidden duration-1000 ">
+                    <img
+                      src={p3}
+                      className="w-[450px] h-[200px] hover:scale-125 duration-1000"
+                      alt=""
+                    />
+                  </div>
+                  <a href="https://github.com/Riddhi-1510/CanteenOrderingSystem">
+                    <RiGithubFill color="#181717" className="inline-block text-2xl" />
+                    <h1 className="p-2 text-2xl underline ">CanteenOrderingSystem</h1>
+                  </a>
+                </div>
+              </div>
+            </section>
+
+
+            {/* <section
               id="skills"
               className="  mt-[100px] mr-[0px] w-[100%] z-10   "
             >
@@ -243,7 +334,7 @@ function App() {
                   data-aos="zoom-in"
                   className="w-[140px] h-[60px] text-2xl box-border p-2  rounded-md border-solid border-2 border  bg-slate-100  duration-500"
                 >
-                  <i class="programming lang-cpp"></i> &nbsp;&nbsp;CPP
+                  <i class="programming lang-cpp"></i> &nbsp;&nbsp;C++
                 </div>
                 <div
                   data-aos="zoom-in"
@@ -253,11 +344,37 @@ function App() {
                 </div>
                 <div
                   data-aos="zoom-in"
-                  className=" w-[140px] h-[60px] text-2xl  box-border p-2 rounded-md  border-solid border-2 border  bg-slate-100 hover:text-black duration-500 "
+                  className="w-[140px] h-[60px] text-2xl box-border p-2 rounded-md border-solid border-2 border bg-slate-100 duration-500"
+                >
+                  <i class="programming lang-python"></i> Python
+                </div>
+
+                <div
+                  data-aos="zoom-in"
+                  className=" w-[180px] h-[60px] text-2xl  box-border p-2 rounded-md  border-solid border-2 border  bg-slate-100 hover:text-black duration-500 "
                 >
                   <i class="programming lang-javascript"></i>{" "}
-                  <span className="text-2xl">&nbsp;&nbsp; JS</span>
+                  <span className="text-2xl">&nbsp;&nbsp; JavaScrip</span>
                 </div>
+                
+                <div
+                  data-aos="zoom-in"
+                  className=" w-[100px] h-[60px] text-2xl  box-border p-2 rounded-md  border-solid border-2 border  bg-slate-100 hover:text-black duration-500 "
+                > 
+                  <span className="text-2xl">&nbsp;&nbsp; SQL</span>
+                </div>
+
+
+                
+              </div>
+
+              <div
+                data-aos="flip-up"
+                className="headingh1 ml-[10%]  text-4xl w-fit p-4 font-bold mb-[30px] mt-[50px]"
+              >
+                WebTechnologies
+              </div>
+              <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-6 mt-[50px] mx-auto  w-fit">
                 <div
                   data-aos="zoom-in"
                   className="w-[140px]  h-[60px] text-2xl   box-border p-2 rounded-md  border-solid border-2 border  bg-slate-100 hover:text-black duration-500 "
@@ -270,15 +387,7 @@ function App() {
                 >
                   <i class="programming lang-html"></i> &nbsp;&nbsp;HTML
                 </div>
-              </div>
-
-              <div
-                data-aos="flip-up"
-                className="headingh1 ml-[10%]  text-4xl w-fit p-4 font-bold mb-[30px] mt-[50px]"
-              >
-                WebTechnologies
-              </div>
-              <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-6 mt-[50px] mx-auto  w-fit">
+                
                 <div
                   data-aos="zoom-in"
                   className="w-[140px] h-[60px] text-2xl    box-border p-2 rounded-md border-solid border-2 border bg-slate-100  hover:text-black duration-500 "
@@ -311,6 +420,25 @@ function App() {
                   <SiExpress color="#000000" className="inline-block text-1xl" />{" "}
                   <span className="text-2xl">Express</span>
                 </div>
+                
+              </div>
+
+              <div
+                data-aos="flip-up"
+                className="headingh1 text-4xl ml-[10%] w-fit p-4 font-bold mb-[30px] mt-[50px]"
+              >
+                DataBase
+              </div>
+              <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-6 mt-[50px] mx-auto w-fit">
+
+                 <div
+                  data-aos="zoom-in"
+                  className="w-[170px] text-2xl   h-[60px] box-border  p-2 rounded-md  border-solid border-2 border   bg-slate-100 hover:text-black duration-500"
+                >
+                  <SiPostgresql color="#000000" className="inline-block text-2xl" />{" "}
+                  PostgreSql 
+                </div>
+
                 <div
                   data-aos="zoom-in"
                   className="w-[160px] text-2xl   h-[60px]  box-border p-2 rounded-md  border-solid border-2 border bg-slate-100 hover:text-black duration-500"
@@ -318,28 +446,14 @@ function App() {
                   <SiMongodb color="#47A248" className="inline-block text-2xl" />{" "}
                   MongoDB
                 </div>
-                <div
-                  data-aos="zoom-in"
-                  className="w-[140px] text-2xl   h-[60px]  box-border p-2 rounded-md  border-solid border-2 border bg-slate-100 hover:text-black duration-500"
-                >
-                  <SiPostgresql
-                    color="#336791"
-                    className="inline-block text-2xl font-bold"
-                  />{" "}
-                  PLSQL
-                </div>
-                <div
-                  data-aos="zoom-in"
-                  className="w-[140px] text-2xl   h-[60px]  box-border p-2 rounded-md  border-solid border-2 border  bg-slate-100 hover:text-black duration-500"
-                >
-                  <SiMysql color="#4479A1" className="inline-block text-2xl" /> MySQL
-                </div>
+
               </div>
+
               <div
                 data-aos="flip-up"
                 className="headingh1 text-4xl ml-[10%] w-fit p-4 font-bold mb-[30px] mt-[50px]"
               >
-                Others
+                Tools
               </div>
               <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-6 mt-[50px] mx-auto w-fit">
                 <div
@@ -358,91 +472,145 @@ function App() {
                 </div>
                 <div
                   data-aos="zoom-in"
-                  className="w-[140px] text-2xl   h-[60px] box-border  p-2 rounded-md  border-solid border-2 border   bg-slate-100 hover:text-black duration-500"
+                  className="w-[170px] text-2xl   h-[60px] box-border  p-2 rounded-md  border-solid border-2 border   bg-slate-100 hover:text-black duration-500"
                 >
-                  <SiIntellijidea color="#000000" className="inline-block text-2xl" />{" "}
-                  Intellij
+                  <SiPostgresql color="#000000" className="inline-block text-2xl" />{" "}
+                  PgAdmin 
                 </div>
               </div>
-            </section>
+            </section> */}
 
-            <section
-              id="projects"
-              className="  mt-[100px] mr-[0px] w-[100%] z-10"
-            >
-              <div
-                data-aos="fade-right"
-                className="  headingAll heading text-4xl w-fit m-auto p-4 font-bold mb-[60px] mt-[50px]"
-              >
-                Projects
-              </div>
-              <div className="mx-auto grid lg:grid-cols-2 md:grid-cols-2 my-10 gap-9 ">
-                <div
-                  data-aos="flip-up"
-                  className="sd w-fit text-center  mx-auto mb-[50px] rounded-lg"
-                >
-                  <div className="w-fit overflow-hidden duration-1000 ">
-                    <img
-                      src={p4}
-                      className="w-[450px] h-[200px] hover:scale-125 duration-1000"
-                      alt=""
-                    />
-                  </div>
-                  <a href="https://github.com/Riddhi-1510/LifePulse_Hub">
-                    <RiGithubFill color="#181717" className="inline-block text-2xl" />{" "}
-                    <h1 className="p-2 text-2xl underline ">LifePulse_Hub</h1>
-                  </a>
-                </div>
-                <div
-                  data-aos="flip-up"
-                  className="sd w-fit text-center rounded-lg mx-auto mb-[50px]"
-                >
-                  <div className="w-fit overflow-hidden duration-1000 ">
-                    <img
-                      src={p2}
-                      className="w-[450px] h-[200px] hover:scale-125 duration-1000"
-                      alt=""
-                    />
-                  </div>
-                  <a href="https://github.com/Riddhi-1510/My_Music_Player">
-                    <RiGithubFill color="#181717" className="inline-block text-2xl" />
-                    <h1 className="p-2 text-2xl underline ">My_Music_Player</h1>
-                  </a>
-                </div>
-                <div
-                  data-aos="flip-up"
-                  className="sd w-fit text-center rounded-lg mx-auto mb-[50px]"
-                >
-                  <div className="w-fit overflow-hidden duration-1000 ">
-                    <img
-                      src={p1}
-                      className="w-[450px] h-[200px] hover:scale-125 duration-1000"
-                      alt=""
-                    />
-                  </div>
-                  <a href="https://github.com/Riddhi-1510/Weather_Web">
-                    <RiGithubFill color="#181717" className="inline-block text-2xl" />
-                    <h1 className="p-2 text-2xl underline ">Weather_Web</h1>
-                  </a>
-                </div>
-                <div
-                  data-aos="flip-up"
-                  className="sd w-fit text-center rounded-lg mx-auto mb-[50px]"
-                >
-                  <div className="w-fit overflow-hidden duration-1000 ">
-                    <img
-                      src={p3}
-                      className="w-[450px] h-[200px] hover:scale-125 duration-1000"
-                      alt=""
-                    />
-                  </div>
-                  <a href="https://github.com/Riddhi-1510/CanteenOrderingSystem">
-                    <RiGithubFill color="#181717" className="inline-block text-2xl" />
-                    <h1 className="p-2 text-2xl underline ">CanteenOrderingSystem</h1>
-                  </a>
-                </div>
-              </div>
-            </section>
+           
+
+
+
+
+<section
+  id="coding"
+  className="mt-[100px] mr-[0px] w-[100%] z-10"
+>
+  <div
+    data-aos="fade-right"
+    className="headingAll heading text-4xl w-fit m-auto p-4 font-bold mb-[60px] mt-[50px]"
+  >
+    Coding Profiles
+  </div>
+
+  <div className="mx-auto grid lg:grid-cols-3 md:grid-cols-3 my-10 gap-9">
+    {/* LeetCode */}
+    <div
+      data-aos="flip-up"
+      className="sd w-fit text-center mx-auto mb-[50px] rounded-lg"
+    >
+      <div className="w-fit overflow-hidden duration-1000">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/LeetCode_logo_black.png/320px-LeetCode_logo_black.png"
+          className="w-[200px] h-[200px] object-contain p-6 hover:scale-125 duration-1000"
+          alt="LeetCode"
+        />
+      </div>
+      <a href="https://leetcode.com/u/Riddhi1510/" target="_blank" rel="noreferrer">
+        <h1 className="p-2 text-2xl underline">LeetCode</h1>
+      </a>
+    </div>
+
+    {/* Codeforces */}
+    <div
+      data-aos="flip-up"
+      className="sd w-fit text-center mx-auto mb-[50px] rounded-lg"
+    >
+      <div className="w-fit overflow-hidden duration-1000">
+        <img
+          src="https://sta.codeforces.com/s/63349/images/codeforces-logo-with-telegram.png"
+          className="w-[200px] h-[200px] object-contain p-6 hover:scale-125 duration-1000"
+          alt="Codeforces"
+        />
+      </div>
+      <a href="https://codeforces.com/problemset/status?my=on" target="_blank" rel="noreferrer">
+        <h1 className="p-2 text-2xl underline">Codeforces</h1>
+      </a>
+    </div>
+
+    {/* GeeksforGeeks */}
+    <div
+      data-aos="flip-up"
+      className="sd w-fit text-center mx-auto mb-[50px] rounded-lg"
+    >
+      <div className="w-fit overflow-hidden duration-1000">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/GeeksforGeeks.svg/2560px-GeeksforGeeks.svg.png"
+          className="w-[200px] h-[200px] object-contain p-6 hover:scale-125 duration-1000"
+          alt="GeeksforGeeks"
+        />
+      </div>
+      <a href="https://www.geeksforgeeks.org/user/mistryriddhi1510/" target="_blank" rel="noreferrer">
+        <h1 className="p-2 text-2xl underline">GeeksforGeeks</h1>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+ 
+<section
+  id="experience"
+  className=" mt-[100px]  w-[100%] z-10 "
+>
+  <div
+    data-aos="fade-right"
+    className="  headingAll heading text-4xl w-fit m-auto p-4 font-bold mb-[60px] mt-[50px]"
+  >
+    Experience
+  </div>
+  <div className="p-[50px] sm:p-[20px]">
+    <VerticalTimeline lineColor="#242400" data-aos="fade">
+
+      <VerticalTimelineElement 
+        contentStyle={{ background: "#90C4FF", color: "black" }}
+        iconStyle={{ background: "white", border: "2px solid black" }}
+        icon={<MdWork />}
+      >
+        <h2 data-aos="fade" style={{ color: "#363636" }}>
+          Summer Research Intern
+        </h2>
+        <p data-aos="fade" className="font-size">
+          Dhirubhai Ambani University | Internship | May 2025 – July 2025
+        </p>
+      </VerticalTimelineElement>
+
+
+      <VerticalTimelineElement 
+        contentStyle={{ background: "#90C4FF", color: "black" }}
+        iconStyle={{ background: "white", border: "2px solid black" }}
+        icon={<MdWork />}
+      >
+        <h2 data-aos="fade" style={{ color: "#363636" }}>
+          Webmaster IEEE IAS DAIICT 
+        </h2>
+        <p data-aos="fade"> 
+        Worked on updating the official IAS DAIICT website with a focus on UI and responsiveness. | May 2024 – Present 
+        </p>
+      </VerticalTimelineElement>
+
+      <VerticalTimelineElement 
+  contentStyle={{ background: "#90C4FF", color: "black" }}
+  iconStyle={{ background: "white", border: "2px solid black" }}
+  icon={<MdWork />}
+>
+  <h2 data-aos="fade" style={{ color: "#363636" }}>
+    Event Coordinator – CSS Battle, iFest’23
+  </h2>
+  <p data-aos="fade">
+    Coordinated and managed the CSS Battle event at iFest’23. Focused on problem making and organizing event. | 2023 | DA-IICT
+  </p>
+</VerticalTimelineElement>
+
+    </VerticalTimeline>
+  </div>
+</section>
+
+
+
 
             <section
               id="education"
